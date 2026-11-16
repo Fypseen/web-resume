@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 interface ExperienceItem {
   role: string;
@@ -100,6 +102,15 @@ const experiences: ExperienceItem[] = [
 ];
 
 export default function ExperienceSection() {
+  const [expandedItems, setExpandedItems] = useState<Record<number, boolean>>({});
+
+  const toggleExpand = (idx: number) => {
+    setExpandedItems((prev) => ({
+      ...prev,
+      [idx]: !prev[idx],
+    }));
+  };
+
   return (
     <section className="experience-section" id="experience">
       <div className="container">
@@ -114,40 +125,65 @@ export default function ExperienceSection() {
         </div>
 
         <div className="experience-timeline">
-          {experiences.map((exp, idx) => (
-            <div className="timeline-item" key={idx}>
-              <div className="timeline-marker"></div>
-              <div className="timeline-card">
-                <div className="timeline-header">
-                  <div>
-                    <h3 className="timeline-role">{exp.role}</h3>
-                    <div className="timeline-company">
-                      <i className="fas fa-building"></i> {exp.company}{" "}
-                      <span style={{ fontSize: "0.85rem", color: "var(--text-muted)", fontWeight: "normal" }}>
-                        • {exp.location}
+          {experiences.map((exp, idx) => {
+            const isExpanded = !!expandedItems[idx];
+            return (
+              <div className="timeline-item" key={idx}>
+                <div className="timeline-marker"></div>
+                <div className={`timeline-card ${isExpanded ? "expanded" : ""}`}>
+                  <div
+                    className="timeline-header clickable"
+                    onClick={() => toggleExpand(idx)}
+                    title={isExpanded ? "Click to collapse" : "Click to expand details"}
+                  >
+                    <div>
+                      <h3 className="timeline-role">{exp.role}</h3>
+                      <div className="timeline-company">
+                        <i className="fas fa-building"></i> {exp.company}{" "}
+                        <span style={{ fontSize: "0.85rem", color: "var(--text-muted)", fontWeight: "normal" }}>
+                          • {exp.location}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="timeline-header-right">
+                      <span className="timeline-period-badge">
+                        <i className="far fa-calendar-alt"></i> {exp.period}
                       </span>
+                      <button
+                        type="button"
+                        className="timeline-expand-btn"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleExpand(idx);
+                        }}
+                        aria-label={isExpanded ? "Collapse details" : "Expand details"}
+                        title={isExpanded ? "Collapse details" : "Expand details"}
+                      >
+                        <i className={isExpanded ? "fas fa-chevron-up" : "fas fa-chevron-down"}></i>
+                      </button>
                     </div>
                   </div>
-                  <span className="timeline-period-badge">
-                    <i className="far fa-calendar-alt"></i> {exp.period}
-                  </span>
-                </div>
-                <p className="timeline-description">{exp.description}</p>
-                <ul className="timeline-duties">
-                  {exp.duties.map((duty, dIdx) => (
-                    <li key={dIdx}>{duty}</li>
-                  ))}
-                </ul>
-                <div className="timeline-tech-stack">
-                  {exp.techStack.map((tech) => (
-                    <span className="tech-tag" key={tech}>
-                      {tech}
-                    </span>
-                  ))}
+
+                  {/* Expandable Content Container */}
+                  <div className={`timeline-expandable-content ${isExpanded ? "open" : ""}`}>
+                    <p className="timeline-description">{exp.description}</p>
+                    <ul className="timeline-duties">
+                      {exp.duties.map((duty, dIdx) => (
+                        <li key={dIdx}>{duty}</li>
+                      ))}
+                    </ul>
+                    <div className="timeline-tech-stack">
+                      {exp.techStack.map((tech) => (
+                        <span className="tech-tag" key={tech}>
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

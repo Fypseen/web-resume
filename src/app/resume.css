@@ -971,7 +971,7 @@ section {
   backdrop-filter: blur(12px);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-fast);
 }
@@ -985,10 +985,61 @@ section {
 .timeline-header {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
+}
+
+.timeline-header.clickable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.timeline-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.timeline-expand-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.timeline-expand-btn:hover,
+.timeline-header.clickable:hover .timeline-expand-btn {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  background: var(--badge-bg);
+  transform: translateY(-1px);
+}
+
+.timeline-expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, margin 0.25s ease;
+  margin-top: 0;
+}
+
+.timeline-expandable-content.open {
+  max-height: 1200px;
+  opacity: 1;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border-color);
 }
 
 .timeline-role {
