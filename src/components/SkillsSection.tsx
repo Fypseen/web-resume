@@ -18,7 +18,7 @@ const skillCategories: SkillItem[] = [
     subtitle: "Core Expertise",
     iconClass: "fas fa-server",
     priority: "core",
-    technologies: ["Java", "Spring Boot", "FastAPI", "REST APIs", "Microservices", "Node js"],
+    technologies: ["Java", "Spring Boot", "FastAPI", "JSP", "Java Servlet", "Express Js", "REST APIs", "Microservices","C#", ".Net MVC5", "Node Js"],
   },
   {
     id: "integration",
@@ -26,7 +26,7 @@ const skillCategories: SkillItem[] = [
     subtitle: "Core Expertise",
     iconClass: "fas fa-link",
     priority: "core",
-    technologies: ["Temenos Infinity", "SSO", "BPC Cards Management"],
+    technologies: ["Temenos Infinity", "SSO", "BPC Cards Management", "CRM Integration"],
   },
   {
     id: "frontend",
@@ -34,7 +34,7 @@ const skillCategories: SkillItem[] = [
     subtitle: "Core Expertise",
     iconClass: "fas fa-desktop",
     priority: "core",
-    technologies: ["React", "JavaScript", "Vue", "Vuex", "Xstate"],
+    technologies: ["React Js", "JavaScript", "Vue Js", "Vuex", "Micro Frontends", "XState",],
   },
   {
     id: "banking",
@@ -42,7 +42,7 @@ const skillCategories: SkillItem[] = [
     subtitle: "Specialization",
     iconClass: "fas fa-shield-alt",
     priority: "specialization",
-    technologies: ["Transmit Security", "SCA", "OTP", "Transaction Signing"],
+    technologies: ["Transmit Security", "SCA", "OTP", "Transaction Signing", "Document signing", "Security Algorithms"],
   },
   {
     id: "database",
@@ -58,8 +58,8 @@ const skillCategories: SkillItem[] = [
     subtitle: "Technical Skills",
     iconClass: "fas fa-cloud",
     priority: "supporting",
-    technologies: ["Git", "Docker", "Postman", "Linux", "OpenShift"],
-  },
+    technologies: ["Git", "Docker","Kafka", "ELK", "Postman", "Linux", "OpenShift"],
+  }
 ];
 
 const filterPills = [

@@ -62,7 +62,7 @@ export default function HeroSection() {
               <span>Connect:</span>
               <div className="social-links-list">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/FarhanDaya"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon-btn"
@@ -71,7 +71,7 @@ export default function HeroSection() {
                   <i className="fab fa-github"></i>
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/farhan-ali-daya"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon-btn"

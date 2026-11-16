@@ -21,16 +21,25 @@ export default function ContactSection() {
             </a>
             <a href="tel:+923363087890" className="btn btn-secondary">
               <i className="fas fa-phone-alt"></i>
-              <span>+92 336 3087890</span>
+              <span>+92-336-3087890</span>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/farhan-ali-daya"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline"
             >
               <i className="fab fa-linkedin"></i>
               <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/FarhanDaya"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline"
+            >
+              <i className="fab fa-github"></i>
+              <span>GitHub</span>
             </a>
             <Link href="/education" className="btn btn-outline">
               <i className="fas fa-graduation-cap"></i>

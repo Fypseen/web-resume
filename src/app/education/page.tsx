@@ -57,7 +57,7 @@ export default function EducationPage() {
                   </div>
                 </div>
                 <span className="edu-period-badge">
-                  <i className="far fa-calendar-alt"></i> Aug 2016 — Jun 2020
+                  <i className="far fa-calendar-alt"></i> Batch of 2020 (2016 — 2020)
                 </span>
               </div>
 

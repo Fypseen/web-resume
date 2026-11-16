@@ -11,31 +11,31 @@ export default function AboutSection() {
           </span>
           <h2 className="section-title">About Me</h2>
           <p className="section-subtitle">
-            A brief overview of my engineering philosophy, background, and what drives my work.
+            Building scalable distributed systems, modern web platforms, and secure digital experiences..
           </p>
         </div>
 
         <div className="about-grid">
           {/* Left Narrative */}
           <div className="about-narrative">
-            <h3 className="about-narrative-title">
+            {/* <h3 className="about-narrative-title">
               Senior Full-Stack Engineer &amp; Software Architect
-            </h3>
-            <p className="about-narrative-lead">
+            </h3> */}
+            {/* <p className="about-narrative-lead">
               Building scalable distributed systems, modern web platforms, and secure digital experiences.
-            </p>
-            <div className="about-narrative-pills">
+            </p> */}
+            {/* <div className="about-narrative-pills">
               <span className="about-pill">Spring Boot</span>
               <span className="about-pill">React</span>
               <span className="about-pill">Microservices</span>
               <span className="about-pill">Micro Frontends</span>
               <span className="about-pill">System Architecture</span>
-            </div>
+            </div> */}
             <p style={{ marginTop: "1.25rem" }}>
-              As an experienced Software Engineer, I excel in leading projects with key technologies like <strong>Spring Boot</strong>, <strong>React</strong>, and <strong>micro frontends</strong>. I specialize in system development, security enhancements, and Agile project management with a strong focus on practical solutions and innovative problem-solving.
+              Experienced Senior Software Engineer with a strong background in <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>React</strong>, and <strong>micro frontends</strong>, specializing in CRM integrations, banking solutions, and system modernization.
             </p>
             <p>
-              From modernizing legacy core banking products to designing high-concurrency onboarding engines and event-driven architectures with Kafka and ELK, I bridge high-level system design with clean, maintainable, and secure implementation.
+              Proven expertise in REST API development, microservices architecture, security enhancements, and state management using <strong>Node.js</strong>, <strong>Express.js</strong>, <strong>Kafka</strong>, <strong>ELK</strong>, and <strong>Docker</strong>. Adept at full-stack development working with Oracle, MongoDB, and SQL, and streamlining workflows with Agile methodologies, Git version control, and CI/CD pipelines. Passionate about scalable software solutions, cloud computing (GCP, AWS), and digital transformation in fintech.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function AboutSection() {
                 <span className="meta-label">
                   <i className="fas fa-phone-alt"></i> Phone
                 </span>
-                <span className="meta-value">+923363087890</span>
+                <span className="meta-value">+92-336-3087890</span>
               </div>
               <div className="meta-item">
                 <span className="meta-label">

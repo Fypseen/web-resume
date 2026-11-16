@@ -13,98 +13,89 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     role: "Senior Software Engineer",
-    company: "Avanza Solutions",
+    company: "Avanza Solutions Pvt Ltd",
     location: "Karachi, Pakistan",
-    period: "May 2024 — Present",
+    period: "May, 2024 — Present",
     description:
-      "Integrating enterprise CRM software for Faysal Bank Limited on high-throughput Java REST API microservice architecture and dynamic frontend systems.",
+      "Integrating enterprise CRM software for Faysal Bank Limited, driving Java REST API microservice efficiency and managing mission-critical deployments.",
     duties: [
       <>
-        <strong>Banking CRM &amp; Architecture:</strong> Coordinated with the bank to facilitate seamless CRM software implementation on a resilient Java REST API microservice architecture.
+        <strong>Enterprise CRM Integration:</strong> Led the integration of CRM software for Faysal Bank Limited, implementing Java REST API microservices architecture to enhance system efficiency.
       </>,
       <>
-        <strong>Dynamic Frontend Engineering:</strong> Engaged in enhancing core project modules by architecting and developing dynamic, component-driven frontend architecture in React.js.
+        <strong>End-to-End Deployments:</strong> Managed end-to-end deployments, troubleshooting integration issues, API failures, and system bugs, ensuring minimal downtime and smooth functionality.
       </>,
       <>
-        <strong>Workflow Automation:</strong> Created and enhanced complex complaint and service request workflows using dynamic programming techniques and streamlined business logic.
+        <strong>Stakeholder Collaboration:</strong> Collaborated with cross-functional teams, including banking stakeholders and developers, to implement scalable enhancements and resolve real-time operational challenges.
       </>,
     ],
-    techStack: ["Java", "Spring Boot", "REST APIs", "Microservices", "React.js", "Dynamic Forms", "Banking CRM"],
+    techStack: ["Java", "Spring Boot", "REST APIs", "Microservices", "React.js", "CRM Integration"],
   },
   {
     role: "Senior Software Engineer",
-    company: "JS Bank",
+    company: "JS Bank Limited",
     location: "Karachi, Pakistan",
-    period: "Feb 2023 — Apr 2024",
+    period: "Feb, 2023 — May, 2024",
     description:
-      "Driving innovative banking solutions with cutting-edge technology at JS Bank across enterprise onboarding, microservices, and security infrastructure.",
+      "Optimizing system performance and leading the modernization of legacy banking systems to reactive microservices architectures.",
     duties: [
       <>
-        <strong>Enterprise Project Management:</strong> Successfully managed multiple projects, leveraging diverse technologies including Node REST APIs, Kafka, ELK, Winston Logger, &amp; databases like Oracle and MongoDB for optimal system performance.
+        <strong>Performance &amp; Observability:</strong> Optimized system performance by integrating Kafka, ELK stack, and Winston Logger, enhancing real-time data processing, log management, and system reliability.
       </>,
       <>
-        <strong>Software Engineering &amp; Modernization:</strong> Engineered onboarding software using Spring Boot and React, focusing on effective state management and led the modernization of legacy digital products utilizing Java Servlet and JSP.
+        <strong>System Modernization:</strong> Led the modernization of legacy banking systems, migrating applications from Java Servlet and JSP to a microservices architecture using Spring Boot, React.js, and Node.js REST APIs.
       </>,
       <>
-        <strong>Security &amp; Integrity:</strong> Enhanced application security by implementing robust security algorithms to protect against payload manipulation and unauthorized data modification.
+        <strong>Application Security:</strong> Strengthened application security by implementing robust security algorithms, mitigating risks related to payload manipulation and unauthorized access.
       </>,
       <>
-        <strong>Collaborative Git Workflows:</strong> Employed Git for comprehensive version control, promoting collaborative and organized code management through effective branching strategies and merge workflows.
-      </>,
-      <>
-        <strong>Agile Delivery:</strong> Adopted Agile methodology to facilitate rapid and seamless development, ensuring timely and efficient deployment of project updates.
+        <strong>CI/CD &amp; Git Automation:</strong> Optimized deployment workflows using Git version control, employing effective branching strategies, merge workflows, and CI/CD automation to enhance collaborative development and code management.
       </>,
     ],
-    techStack: ["Spring Boot", "React", "Kafka", "Node.js REST APIs", "Oracle", "MongoDB", "ELK", "Java Servlet", "JSP", "Git"],
+    techStack: ["Spring Boot", "React.js", "Kafka", "Node.js REST APIs", "Oracle", "MongoDB", "ELK", "Java Servlet", "JSP", "Git", "CI/CD"],
   },
   {
-    role: "Senior Software Engineer / Software Engineer",
+    role: "Senior Software Engineer",
     company: "Teresol Pvt Ltd",
     location: "Karachi, Pakistan",
-    period: "Sep 2021 — Jan 2023",
+    period: "Sep, 2021 — Jan, 2023",
     description:
-      "Empowering digital transformation with creative and efficient tech strategies across micro frontends and component-driven architecture.",
+      "Developing and deploying modular micro frontend architectures and optimizing full-stack integration across enterprise software.",
     duties: [
       <>
-        <strong>Micro Frontends &amp; Docker:</strong> Managed and contributed to component development, state management through Vuex, and micro frontend deployment through Docker at the harbor.
+        <strong>Micro Frontends &amp; Containerization:</strong> Developed and deployed micro frontend architectures, leveraging Vue.js, Docker, and state management tools like Vuex and xState to enhance modularity and scalability.
       </>,
       <>
-        <strong>Finite State Modeling:</strong> Implemented a state management system using the xState library, effectively handling all use cases and maintaining complex application states.
+        <strong>API Performance Optimization:</strong> Orchestrated seamless frontend-backend integration, optimizing REST API calls via Quarkus to ensure high performance.
       </>,
       <>
-        <strong>Framework Integration:</strong> Orchestrated the integration of the Vue.js-based frontend application with high-performance REST APIs developed in the Quarkus framework.
+        <strong>Business Analysis Translation:</strong> Collaborated with business analysts and validation teams, translating complex business logic and system requirements into functional solutions.
       </>,
       <>
-        <strong>Business Analysis &amp; Validation:</strong> Collaborated closely with Business Analysts and validation teams to meticulously gather and comprehend intricate business logic and system requirements.
-      </>,
-      <>
-        <strong>Version Control:</strong> Utilized Git for version control, ensuring efficient collaboration, code traceability, and streamlined project management with structured branching strategies.
+        <strong>Deployment Pipeline Optimization:</strong> Optimized software deployment pipelines, improving Git workflows, CI/CD automation, and code review processes for faster, more efficient releases.
       </>,
     ],
-    techStack: ["Vue.js", "Vuex", "xState", "Quarkus", "Micro Frontends", "Docker", "Harbor", "REST APIs", "Git"],
+    techStack: ["Vue.js", "Vuex", "xState", "Quarkus", "Micro Frontends", "Docker", "GitLab", "CI/CD"],
   },
   {
     role: "Software Developer",
-    company: "Bank AL Habib Ltd",
+    company: "Bank AL Habib Limited",
     location: "Karachi, Pakistan",
-    period: "Oct 2020 — Aug 2021",
+    period: "Oct, 2020 — Aug, 2021",
     description:
-      "Shaping the future of finance with progressive banking solutions, core financial portal engineering, and high-volume utility reporting.",
+      "Developing digital banking portals, financial installment calculator APIs, and corporate file management systems.",
     duties: [
       <>
-        <strong>Roshan Digital Account Portal:</strong> Developed the Roshan Digital Account portal for the back office, incorporating advanced audit trail management with multiple approval levels using .Net MVC5.
+        <strong>RDA Portal Development:</strong> Developed and maintained the RDA portal, implementing .NET MVC5 to streamline digital banking operations.
       </>,
       <>
-        <strong>Financial Calculator API:</strong> Created the Roshan Apni Car Installment calculator REST API for precise multi-term financing simulations.
+        <strong>Financial Calculator API:</strong> Designed and deployed REST APIs for the Roshan Apni Car Installment Calculator, enabling accurate financial calculations for customer loan applications.
       </>,
       <>
-        <strong>Corporate File Management:</strong> Designed and managed a daily File Management Application for corporate utility partners including KE and LESCO, facilitating daily reporting and reconciliation.
-      </>,
-      <>
-        <strong>Source Control:</strong> Proficiently utilized SVN (Subversion) and Team Foundation Server (TFS) for collaborative corporate software delivery.
+        <strong>File Management Automation:</strong> Built a File Management System for financial institutions, automating daily reporting and reconciliation processes.
       </>,
     ],
-    techStack: [".Net MVC5", ".Net Core", "C#", "REST API", "SQL", "SVN", "TFS"],
+    techStack: [".NET MVC5", ".NET Core", "C#", "REST API", "SQL", "SVN", "TFS"],
   },
 ];
 
