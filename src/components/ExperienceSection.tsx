@@ -12,58 +12,79 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    role: "Lead Full-Stack Engineer",
-    company: "Apex Financial Technologies",
-    location: "San Francisco, CA (Hybrid)",
-    period: "2023 — Present",
-    description:
-      "Leading a squad of 7 engineers building real-time payment reconciliation workflows and fintech analytics dashboards processing $12M+ in daily transaction volume.",
-    duties: [
-      <>
-        <strong>Performance:</strong> Redesigned critical analytics pipeline, cutting dashboard p99 query latency from 3.2s to 240ms using Redis caching and PostgreSQL query optimization.
-      </>,
-      <>
-        <strong>Architecture:</strong> Spearheaded the migration from a monolithic backend to modular microservices with Node.js, Go, and Kafka, boosting overall system reliability to 99.98%.
-      </>,
-      <>
-        <strong>Mentorship &amp; Quality:</strong> Introduced automated end-to-end testing with Playwright and Jest, increasing test coverage from 52% to 88% and shortening release cycles by 40%.
-      </>,
-    ],
-    techStack: ["React", "TypeScript", "Node.js", "Go", "PostgreSQL", "Redis", "Kafka", "AWS"],
-  },
-  {
     role: "Senior Software Engineer",
-    company: "CloudScale Systems",
-    location: "Remote",
-    period: "2021 — 2023",
+    company: "JS Bank",
+    location: "Karachi, Pakistan",
+    period: "Feb 2023 — Present",
     description:
-      "Engineered core SaaS infrastructure for a multi-tenant cloud monitoring product serving 150,000+ active enterprise developers.",
+      "Driving innovative banking solutions with cutting-edge technology at JS Bank across enterprise onboarding, microservices, and security infrastructure.",
     duties: [
       <>
-        <strong>Frontend Platform:</strong> Architected a reusable design system and component library in React/TypeScript adopted across 4 major web applications.
+        <strong>Enterprise Project Management:</strong> Successfully managed multiple projects, leveraging diverse technologies including Node REST APIs, Kafka, ELK, Winston Logger, &amp; databases like Oracle and MongoDB for optimal system performance.
       </>,
       <>
-        <strong>Scalability:</strong> Designed high-throughput GraphQL APIs handling 25,000+ requests/sec with Node.js and Apollo Federation.
+        <strong>Software Engineering &amp; Modernization:</strong> Engineered onboarding software using Spring Boot and React, focusing on effective state management and led the modernization of legacy digital products utilizing Java Servlet and JSP.
       </>,
       <>
-        <strong>DevOps:</strong> Configured zero-downtime deployment pipelines using GitHub Actions, Docker, and AWS ECS, reducing deployment rollbacks by 75%.
+        <strong>Security &amp; Integrity:</strong> Enhanced application security by implementing robust security algorithms to protect against payload manipulation and unauthorized data modification.
+      </>,
+      <>
+        <strong>Collaborative Git Workflows:</strong> Employed Git for comprehensive version control, promoting collaborative and organized code management through effective branching strategies and merge workflows.
+      </>,
+      <>
+        <strong>Agile Delivery:</strong> Adopted Agile methodology to facilitate rapid and seamless development, ensuring timely and efficient deployment of project updates.
       </>,
     ],
-    techStack: ["Next.js", "GraphQL", "Docker", "Kubernetes", "MongoDB", "Tailwind CSS"],
+    techStack: ["Spring Boot", "React", "Kafka", "Node.js REST APIs", "Oracle", "MongoDB", "ELK", "Java Servlet", "JSP", "Git"],
   },
   {
-    role: "Full-Stack Software Developer",
-    company: "Hyperion Interactive",
-    location: "Austin, TX",
-    period: "2019 — 2021",
+    role: "Senior Software Engineer / Software Engineer",
+    company: "Teresol Pvt Ltd",
+    location: "Karachi, Pakistan",
+    period: "Sep 2021 — Jan 2023",
     description:
-      "Developed responsive web applications, customer portals, and internal tools for high-growth e-commerce and retail clients.",
+      "Empowering digital transformation with creative and efficient tech strategies across micro frontends and component-driven architecture.",
     duties: [
-      "Delivered 12+ greenfield web applications from initial specification to production release on schedule.",
-      "Integrated third-party payment gateways (Stripe, PayPal) and shipping APIs with webhook handling and automated retry mechanisms.",
-      "Optimized web vitals (LCP, FID, CLS), improving Lighthouse performance scores from 64 to 98.",
+      <>
+        <strong>Micro Frontends &amp; Docker:</strong> Managed and contributed to component development, state management through Vuex, and micro frontend deployment through Docker at the harbor.
+      </>,
+      <>
+        <strong>Finite State Modeling:</strong> Implemented a state management system using the xState library, effectively handling all use cases and maintaining complex application states.
+      </>,
+      <>
+        <strong>Framework Integration:</strong> Orchestrated the integration of the Vue.js-based frontend application with high-performance REST APIs developed in the Quarkus framework.
+      </>,
+      <>
+        <strong>Business Analysis &amp; Validation:</strong> Collaborated closely with Business Analysts and validation teams to meticulously gather and comprehend intricate business logic and system requirements.
+      </>,
+      <>
+        <strong>Version Control:</strong> Utilized Git for version control, ensuring efficient collaboration, code traceability, and streamlined project management with structured branching strategies.
+      </>,
     ],
-    techStack: ["JavaScript (ES6+)", "React", "Express.js", "MySQL", "HTML5 / SASS"],
+    techStack: ["Vue.js", "Vuex", "xState", "Quarkus", "Micro Frontends", "Docker", "Harbor", "REST APIs", "Git"],
+  },
+  {
+    role: "Software Developer",
+    company: "Bank AL Habib Ltd",
+    location: "Karachi, Pakistan",
+    period: "Oct 2020 — Aug 2021",
+    description:
+      "Shaping the future of finance with progressive banking solutions, core financial portal engineering, and high-volume utility reporting.",
+    duties: [
+      <>
+        <strong>Roshan Digital Account Portal:</strong> Developed the Roshan Digital Account portal for the back office, incorporating advanced audit trail management with multiple approval levels using .Net MVC5.
+      </>,
+      <>
+        <strong>Financial Calculator API:</strong> Created the Roshan Apni Car Installment calculator REST API for precise multi-term financing simulations.
+      </>,
+      <>
+        <strong>Corporate File Management:</strong> Designed and managed a daily File Management Application for corporate utility partners including KE and LESCO, facilitating daily reporting and reconciliation.
+      </>,
+      <>
+        <strong>Source Control:</strong> Proficiently utilized SVN (Subversion) and Team Foundation Server (TFS) for collaborative corporate software delivery.
+      </>,
+    ],
+    techStack: [".Net MVC5", ".Net Core", "C#", "REST API", "SQL", "SVN", "TFS"],
   },
 ];
 

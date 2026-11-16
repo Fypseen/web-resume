@@ -18,14 +18,24 @@ export default function AboutSection() {
         <div className="about-grid">
           {/* Left Narrative */}
           <div className="about-narrative">
-            <p>
-              I am a results-oriented <strong>Senior Full-Stack Engineer</strong> with over 6 years of hands-on experience designing and delivering resilient distributed systems, modern reactive web applications, and mission-critical cloud backends.
+            <h3 className="about-narrative-title">
+              Senior Full-Stack Engineer &amp; Software Architect
+            </h3>
+            <p className="about-narrative-lead">
+              Building scalable distributed systems, modern web platforms, and secure digital experiences.
+            </p>
+            <div className="about-narrative-pills">
+              <span className="about-pill">Spring Boot</span>
+              <span className="about-pill">React</span>
+              <span className="about-pill">Microservices</span>
+              <span className="about-pill">Micro Frontends</span>
+              <span className="about-pill">System Architecture</span>
+            </div>
+            <p style={{ marginTop: "1.25rem" }}>
+              As an experienced Software Engineer, I excel in leading projects with key technologies like <strong>Spring Boot</strong>, <strong>React</strong>, and <strong>micro frontends</strong>. I specialize in system development, security enhancements, and Agile project management with a strong focus on practical solutions and innovative problem-solving.
             </p>
             <p>
-              My journey began with deep curiosity about how systems communicate at scale. Today, I bridge the gap between <strong>intuitive, accessible frontend interfaces</strong> and <strong>robust, fault-tolerant backend architectures</strong>. I love turning complex business requirements into elegant, maintainable codebases.
-            </p>
-            <p>
-              Beyond writing code, I actively mentor junior engineers, champion automated testing and CI/CD pipelines, and contribute to open-source developer tooling. When I&apos;m not coding, you can find me reading system design papers, exploring smart home tech, or hiking scenic trails.
+              From modernizing legacy core banking products to designing high-concurrency onboarding engines and event-driven architectures with Kafka and ELK, I bridge high-level system design with clean, maintainable, and secure implementation.
             </p>
           </div>
 
@@ -39,25 +49,25 @@ export default function AboutSection() {
                 <span className="meta-label">
                   <i className="fas fa-map-marker-alt"></i> Location
                 </span>
-                <span className="meta-value">San Francisco, CA (Open to Remote)</span>
+                <span className="meta-value">Karachi, Pakistan</span>
               </div>
               <div className="meta-item">
                 <span className="meta-label">
                   <i className="fas fa-envelope"></i> Email
                 </span>
-                <span className="meta-value">Farhandaya72@gmail.com</span>
+                <span className="meta-value">farhandaya22@gmail.com</span>
+              </div>
+              <div className="meta-item">
+                <span className="meta-label">
+                  <i className="fas fa-phone-alt"></i> Phone
+                </span>
+                <span className="meta-value">+923363087890</span>
               </div>
               <div className="meta-item">
                 <span className="meta-label">
                   <i className="fas fa-briefcase"></i> Experience
                 </span>
-                <span className="meta-value">6+ Years (Senior / Staff)</span>
-              </div>
-              <div className="meta-item">
-                <span className="meta-label">
-                  <i className="fas fa-language"></i> Languages
-                </span>
-                <span className="meta-value">English (Native), Spanish (Conversational)</span>
+                <span className="meta-value">5+ Years (Senior Software Engineer)</span>
               </div>
               <div className="meta-item">
                 <span className="meta-label">
@@ -68,7 +78,7 @@ export default function AboutSection() {
                     href="/education"
                     style={{ color: "var(--accent-primary)", textDecoration: "underline" }}
                   >
-                    B.S. in Computer Science &rarr;
+                    SZABIST Karachi — B.S. CS &rarr;
                   </Link>
                 </span>
               </div>

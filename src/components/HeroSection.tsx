@@ -22,7 +22,7 @@ export default function HeroSection() {
             </div>
 
             <h1 className="hero-title">
-              Hi, I&apos;m <span className="gradient-text">Farhan Ali</span>
+              Hi, I&apos;m <span className="gradient-text">Farhan Ali Daya</span>
             </h1>
 
             <h2 className="hero-role-title">
@@ -80,7 +80,7 @@ export default function HeroSection() {
                   <i className="fab fa-linkedin-in"></i>
                 </a>
                 <a
-                  href="mailto:Farhandaya72@gmail.com"
+                  href="mailto:farhandaya22@gmail.com"
                   className="social-icon-btn"
                   aria-label="Email Me"
                 >
@@ -96,7 +96,7 @@ export default function HeroSection() {
               <div className="avatar-wrapper">
                 <Image
                   src="/assets/avatar.svg"
-                  alt="Farhan Ali Portrait"
+                  alt="Farhan Ali Daya Portrait"
                   className="avatar-img"
                   width={120}
                   height={120}
@@ -107,12 +107,12 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              <h2 className="profile-name">Farhan Ali</h2>
-              <p className="profile-role">Senior Full-Stack Engineer</p>
+              <h2 className="profile-name">Farhan Ali Daya</h2>
+              <p className="profile-role">Senior Software Engineer</p>
 
               <div className="profile-stats-grid">
                 <div className="stat-item">
-                  <span className="stat-number gradient-text">6+</span>
+                  <span className="stat-number gradient-text">5+</span>
                   <span className="stat-label">Years Exp</span>
                 </div>
                 <div className="stat-item">

@@ -15,18 +15,22 @@ export default function ContactSection() {
           </p>
 
           <div className="contact-actions">
-            <a href="mailto:Farhandaya72@gmail.com" className="btn btn-primary">
+            <a href="mailto:farhandaya22@gmail.com" className="btn btn-primary">
               <i className="fas fa-envelope"></i>
-              <span>Send Me an Email</span>
+              <span>farhandaya22@gmail.com</span>
+            </a>
+            <a href="tel:+923363087890" className="btn btn-secondary">
+              <i className="fas fa-phone-alt"></i>
+              <span>+92 336 3087890</span>
             </a>
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-secondary"
+              className="btn btn-outline"
             >
               <i className="fab fa-linkedin"></i>
-              <span>Connect on LinkedIn</span>
+              <span>LinkedIn</span>
             </a>
             <Link href="/education" className="btn btn-outline">
               <i className="fas fa-graduation-cap"></i>

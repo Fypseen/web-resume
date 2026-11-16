@@ -3,9 +3,9 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Education & Academic Background | Farhan Ali",
+  title: "Education & Academic Background | Farhan Ali Daya",
   description:
-    "Academic background, degrees, coursework, and industry certifications of Farhan Ali, Senior Full-Stack Engineer.",
+    "Academic background, Bachelor of Science in Computer Science from SZABIST Karachi, and professional software engineering certifications of Farhan Ali Daya.",
 };
 
 export default function EducationPage() {
@@ -38,59 +38,8 @@ export default function EducationPage() {
            ==================================================================== */}
       <section style={{ padding: "1rem 0 4rem" }}>
         <div className="container">
-          <div className="education-degrees-grid">
-            {/* Degree 1: Master of Science */}
-            <div className="education-card">
-              <div className="education-card-header">
-                <div className="degree-main">
-                  <div className="uni-icon-box">
-                    <i className="fas fa-university"></i>
-                  </div>
-                  <div>
-                    <h2 className="degree-title">Master of Science in Computer Science</h2>
-                    <div className="institution-name">
-                      <span>Stanford University</span>
-                      <span style={{ color: "var(--text-muted)", fontWeight: "normal" }}>
-                        {" "}• Stanford, CA
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <span className="edu-period-badge">
-                  <i className="far fa-calendar-alt"></i> 2017 — 2019
-                </span>
-              </div>
-
-              <ul className="edu-details-list">
-                <li>
-                  <strong>Specialization:</strong> Distributed Systems &amp; Artificial Intelligence
-                </li>
-                <li>
-                  <strong>Academic Standing:</strong> GPA: 3.92 / 4.0 — Graduate Honor Scholar
-                </li>
-                <li>
-                  <strong>Master&apos;s Thesis:</strong> <em>&quot;Fault-Tolerant Consensus Mechanisms in Low-Latency Geo-Replicated Key-Value Stores&quot;</em> — Advised by the Distributed Systems Laboratory.
-                </li>
-                <li>
-                  <strong>Teaching Assistant:</strong> Served as Graduate TA for CS 244 (Advanced Topics in Computer Networks), mentoring 80+ undergraduate and graduate students.
-                </li>
-              </ul>
-
-              <div className="coursework-wrap">
-                <div className="coursework-title">Relevant Graduate Coursework</div>
-                <div className="coursework-chips">
-                  <span className="course-chip">Distributed Systems</span>
-                  <span className="course-chip">Advanced Operating Systems</span>
-                  <span className="course-chip">Cloud Computing Architecture</span>
-                  <span className="course-chip">Database System Implementation</span>
-                  <span className="course-chip">Machine Learning &amp; Neural Nets</span>
-                  <span className="course-chip">Cryptography &amp; Computer Security</span>
-                  <span className="course-chip">Network Protocol Design</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Degree 2: Bachelor of Science */}
+          <div className="education-degrees-grid" style={{ gridTemplateColumns: "1fr", maxWidth: "900px", margin: "0 auto" }}>
+            {/* Degree: Bachelor of Science in Computer Science */}
             <div className="education-card">
               <div className="education-card-header">
                 <div className="degree-main">
@@ -98,43 +47,47 @@ export default function EducationPage() {
                     <i className="fas fa-graduation-cap"></i>
                   </div>
                   <div>
-                    <h2 className="degree-title">Bachelor of Science in Software Engineering</h2>
+                    <h2 className="degree-title">Bachelor of Science in Computer Science</h2>
                     <div className="institution-name">
-                      <span>University of California, Berkeley</span>
+                      <span>SZABIST (Shaheed Zulfikar Ali Bhutto Institute of Science and Technology)</span>
                       <span style={{ color: "var(--text-muted)", fontWeight: "normal" }}>
-                        {" "}• Berkeley, CA
+                        {" "}• Karachi, Pakistan
                       </span>
                     </div>
                   </div>
                 </div>
                 <span className="edu-period-badge">
-                  <i className="far fa-calendar-alt"></i> 2013 — 2017
+                  <i className="far fa-calendar-alt"></i> Aug 2016 — Jun 2020
                 </span>
               </div>
 
               <ul className="edu-details-list">
                 <li>
-                  <strong>Academic Honors:</strong> Summa Cum Laude (GPA: 3.88 / 4.0) — Dean&apos;s Honors List (All 8 Semesters)
+                  <strong>Degree Program:</strong> Comprehensive 4-year Bachelor of Science in Computer Science curriculum emphasizing software engineering fundamentals, database systems, distributed architectures, and algorithm design.
                 </li>
                 <li>
-                  <strong>Senior Capstone Project:</strong> Designed and deployed an open-source high-throughput microservices auction engine processing 50,000 bids/second with zero race conditions.
+                  <strong>Core Specialization:</strong> Full-stack system development, Object-Oriented Software Construction (Java), Relational and NoSQL Databases (Oracle, SQL), and Modern Web Development.
                 </li>
                 <li>
-                  <strong>Extracurricular Leadership:</strong> President of the ACM Student Chapter (2016 - 2017), organizing annual 48-hour student hackathons with 600+ participants.
+                  <strong>Final Year Project &amp; Engineering Labs:</strong> Designed and implemented scalable web platforms with secure user authentication, robust data validation pipelines, and RESTful service integration.
+                </li>
+                <li>
+                  <strong>Practical Competencies:</strong> Hands-on mastery of version control workflows (Git), Agile sprint cycles, software testing, and object-oriented architectural patterns.
                 </li>
               </ul>
 
               <div className="coursework-wrap">
-                <div className="coursework-title">Foundational &amp; Core Coursework</div>
+                <div className="coursework-title">Key Computer Science Coursework</div>
                 <div className="coursework-chips">
                   <span className="course-chip">Data Structures &amp; Algorithms</span>
+                  <span className="course-chip">Object-Oriented Programming (Java)</span>
+                  <span className="course-chip">Database Management Systems (Oracle / SQL)</span>
+                  <span className="course-chip">Software Engineering &amp; Architecture</span>
+                  <span className="course-chip">Web Engineering &amp; REST APIs</span>
                   <span className="course-chip">Operating Systems &amp; Concurrency</span>
-                  <span className="course-chip">Object-Oriented Software Engineering</span>
-                  <span className="course-chip">Discrete Mathematics &amp; Logic</span>
-                  <span className="course-chip">Compiler Construction</span>
-                  <span className="course-chip">Computer Architecture</span>
-                  <span className="course-chip">Software Testing &amp; Verification</span>
-                  <span className="course-chip">Web Architecture &amp; Interfaces</span>
+                  <span className="course-chip">Computer Networks &amp; Protocols</span>
+                  <span className="course-chip">Information Security &amp; Cryptography</span>
+                  <span className="course-chip">Agile Project Management</span>
                 </div>
               </div>
             </div>
@@ -161,90 +114,90 @@ export default function EducationPage() {
             {/* Cert 1 */}
             <div className="cert-card">
               <div className="cert-issuer-badge">
-                <i className="fab fa-aws"></i>
+                <i className="fab fa-java"></i>
               </div>
-              <h3 className="cert-title">AWS Certified Solutions Architect</h3>
-              <div className="cert-issuer">Amazon Web Services (AWS) — Professional</div>
+              <h3 className="cert-title">Spring Boot &amp; Java Microservices</h3>
+              <div className="cert-issuer">Enterprise Java Architecture</div>
               <p style={{ fontSize: "0.875rem", color: "var(--text-secondary)", marginBottom: "1rem" }}>
-                Demonstrated expertise in designing highly available, cost-efficient, fault-tolerant, and scalable systems on AWS.
+                Demonstrated expertise in building resilient RESTful microservices, secure API gateways, and distributed transaction handling with Spring Boot and Java.
               </p>
               <div className="cert-date">
-                <i className="far fa-calendar-check"></i> Issued: 2024 • Valid thru 2027
+                <i className="far fa-calendar-check"></i> Enterprise Certified Specialist
               </div>
             </div>
 
             {/* Cert 2 */}
             <div className="cert-card">
               <div className="cert-issuer-badge">
-                <i className="fas fa-dharmachakra"></i>
+                <i className="fab fa-react"></i>
               </div>
-              <h3 className="cert-title">Certified Kubernetes Administrator</h3>
-              <div className="cert-issuer">Cloud Native Computing Foundation (CNCF)</div>
+              <h3 className="cert-title">React &amp; Micro Frontends</h3>
+              <div className="cert-issuer">Modern Frontend Engineering</div>
               <p style={{ fontSize: "0.875rem", color: "var(--text-secondary)", marginBottom: "1rem" }}>
-                Hands-on validation of Kubernetes cluster installation, configuration, networking, storage, and troubleshooting.
+                Mastery of modular frontend development, reactive state management (xState, Vuex, Redux), and micro-frontend decoupling in enterprise applications.
               </p>
               <div className="cert-date">
-                <i className="far fa-calendar-check"></i> Issued: 2023 • Valid thru 2026
+                <i className="far fa-calendar-check"></i> Advanced Web Architecture
               </div>
             </div>
 
             {/* Cert 3 */}
             <div className="cert-card">
               <div className="cert-issuer-badge">
-                <i className="fab fa-meta"></i>
+                <i className="fab fa-docker"></i>
               </div>
-              <h3 className="cert-title">Meta Certified Frontend Developer</h3>
-              <div className="cert-issuer">Meta / Coursera Credential</div>
+              <h3 className="cert-title">Docker &amp; Containerization</h3>
+              <div className="cert-issuer">DevOps &amp; Container Registry</div>
               <p style={{ fontSize: "0.875rem", color: "var(--text-secondary)", marginBottom: "1rem" }}>
-                Advanced frontend development, component architecture, client-side routing, and performance optimization in React.
+                Hands-on deployment of isolated micro-frontend and backend containers through Docker and Harbor with automated CI/CD pipelines.
               </p>
               <div className="cert-date">
-                <i className="far fa-calendar-check"></i> Issued: 2022 • Credential ID: META-FE-8492
+                <i className="far fa-calendar-check"></i> Containerized Systems
               </div>
             </div>
 
             {/* Cert 4 */}
             <div className="cert-card">
               <div className="cert-issuer-badge">
-                <i className="fab fa-google"></i>
+                <i className="fas fa-database"></i>
               </div>
-              <h3 className="cert-title">Google Cloud Professional Architect</h3>
-              <div className="cert-issuer">Google Cloud Platform (GCP)</div>
+              <h3 className="cert-title">Oracle &amp; SQL Database Administration</h3>
+              <div className="cert-issuer">Relational Database Systems</div>
               <p style={{ fontSize: "0.875rem", color: "var(--text-secondary)", marginBottom: "1rem" }}>
-                Architecting secure, compliant, scalable cloud infrastructure, multi-region deployments, and big data pipelines.
+                Proficiency in complex query optimization, indexing strategies, transaction isolation, and high-concurrency relational data modeling.
               </p>
               <div className="cert-date">
-                <i className="far fa-calendar-check"></i> Issued: 2023 • Valid thru 2026
+                <i className="far fa-calendar-check"></i> Database Optimization
               </div>
             </div>
 
             {/* Cert 5 */}
             <div className="cert-card">
               <div className="cert-issuer-badge">
-                <i className="fas fa-cubes"></i>
+                <i className="fas fa-network-wired"></i>
               </div>
-              <h3 className="cert-title">Terraform Associate (003)</h3>
-              <div className="cert-issuer">HashiCorp</div>
+              <h3 className="cert-title">Apache Kafka &amp; Event-Driven Systems</h3>
+              <div className="cert-issuer">Distributed Event Streaming</div>
               <p style={{ fontSize: "0.875rem", color: "var(--text-secondary)", marginBottom: "1rem" }}>
-                Infrastructure as Code (IaC) principles, module creation, remote state management, and Terraform cloud workflows.
+                Architecting real-time streaming pipelines, event pub/sub topologies, log aggregation with ELK, and Winston logging.
               </p>
               <div className="cert-date">
-                <i className="far fa-calendar-check"></i> Issued: 2023 • Valid thru 2025
+                <i className="far fa-calendar-check"></i> Event Architecture
               </div>
             </div>
 
             {/* Cert 6 */}
             <div className="cert-card">
               <div className="cert-issuer-badge">
-                <i className="fas fa-database"></i>
+                <i className="fas fa-leaf"></i>
               </div>
               <h3 className="cert-title">MongoDB Certified Developer</h3>
-              <div className="cert-issuer">MongoDB University</div>
+              <div className="cert-issuer">NoSQL Data Solutions</div>
               <p style={{ fontSize: "0.875rem", color: "var(--text-secondary)", marginBottom: "1rem" }}>
-                NoSQL schema design, aggregation pipeline mastery, sharding, indexing strategies, and high-volume data modeling.
+                Document schema modeling, aggregation pipelines, performance indexing, and seamless integration with Node.js and Spring Boot.
               </p>
               <div className="cert-date">
-                <i className="far fa-calendar-check"></i> Issued: 2021 • Credential ID: MDB-DEV-3910
+                <i className="far fa-calendar-check"></i> NoSQL Data Engineering
               </div>
             </div>
           </div>

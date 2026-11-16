@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 import AmbientBackground from "@/components/AmbientBackground";
 
 export const metadata: Metadata = {
-  title: "Farhan Ali | Senior Full-Stack Engineer & Architect - Resume",
+  title: "Farhan Ali Daya | Senior Software Engineer & Architect - Resume",
   description:
-    "Professional portfolio and resume of Farhan Ali, Senior Full-Stack Software Engineer specializing in modern web applications, distributed systems, and cloud architecture.",
+    "Professional portfolio and resume of Farhan Ali Daya, Senior Software Engineer specializing in Spring Boot, React, micro frontends, banking solutions, and distributed systems.",
 };
 
 export default function RootLayout({
@@ -24,6 +24,7 @@ export default function RootLayout({
     >
       <head>
         {/* Google Fonts via standard link (no next/font network calls at build time) */}
+        {/* eslint-disable @next/next/no-page-custom-font */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

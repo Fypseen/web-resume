@@ -3,6 +3,7 @@ import Link from "next/link";
 
 interface ProjectItem {
   title: string;
+  company: string;
   type: string;
   bannerClass: string;
   iconClass: string;
@@ -15,70 +16,52 @@ interface ProjectItem {
 
 const projects: ProjectItem[] = [
   {
-    title: "CloudPulse Telemetry",
-    type: "Full-Stack SaaS",
+    title: "RDA Back Office Portal",
+    company: "JS Bank",
+    type: "Fintech & Banking",
     bannerClass: "banner-1",
-    iconClass: "fas fa-chart-line",
-    desc: "Real-time cloud observability and APM platform with customizable live dashboard charts, alert triggers, and distributed tracing.",
-    tags: ["Next.js 14", "TypeScript", "Go", "TimescaleDB", "WebSockets"],
+    iconClass: "fas fa-university",
+    desc: "Roshan Digital Account back office portal to validate records, verify documentation, and facilitate seamless account opening workflows for overseas and local clients.",
+    tags: ["Spring Boot", "React", "Oracle", "Node REST APIs", "Microservices", "Security Algorithms"],
     githubUrl: "https://github.com",
     liveUrl: "#",
-    liveLabel: "Live Demo",
+    liveLabel: "Case Study",
   },
   {
-    title: "NeuroSearch Engine",
-    type: "AI & Developer Tool",
+    title: "Employee Banking Onboarding Web Application",
+    company: "JS Bank",
+    type: "Enterprise Automation",
     bannerClass: "banner-2",
-    iconClass: "fas fa-robot",
-    desc: "High-speed semantic vector search engine integrating LLM embeddings to enable contextual search over technical docs and codebases.",
-    tags: ["Python", "FastAPI", "Qdrant Vector DB", "React", "Docker"],
+    iconClass: "fas fa-users-cog",
+    desc: "Automating account opening and management processes for corporate employers. Features end-to-end digital onboarding, robust state management, and real-time event streaming.",
+    tags: ["Spring Boot", "React", "Kafka", "ELK Stack", "Winston Logger", "MongoDB"],
     githubUrl: "https://github.com",
     liveUrl: "#",
-    liveLabel: "Live Demo",
+    liveLabel: "Overview",
   },
   {
-    title: "FlowCommerce Core",
-    type: "E-Commerce Platform",
+    title: "Revamping Core Banking Software",
+    company: "Teresol Pvt Ltd",
+    type: "Architecture Modernization",
     bannerClass: "banner-3",
-    iconClass: "fas fa-shopping-bag",
-    desc: "Headless microservices e-commerce platform with sub-second checkout, optimistic UI updates, inventory locks, and Stripe integration.",
-    tags: ["React", "Node.js", "PostgreSQL", "Redis", "Stripe API"],
+    iconClass: "fas fa-cubes",
+    desc: "Modernization of legacy core banking software by eliminating legacy codebases and transitioning to an isolated Micro Frontend architecture deployed via Docker at Harbor.",
+    tags: ["Vue.js", "Vuex", "xState", "Quarkus REST APIs", "Micro Frontends", "Docker"],
     githubUrl: "https://github.com",
     liveUrl: "#",
-    liveLabel: "Live Demo",
+    liveLabel: "Architecture",
   },
   {
-    title: "TaskStream Collaborative",
-    type: "Productivity & Collab",
+    title: "Roshan Digital Account & Investment Schemes",
+    company: "Bank AL Habib",
+    type: "Digital Banking & Investments",
     bannerClass: "banner-4",
-    iconClass: "fas fa-tasks",
-    desc: "Multiplayer Kanban board featuring instant CRDT-based synchronization, offline support, drag-and-drop, and granular role permissions.",
-    tags: ["TypeScript", "Yjs (CRDT)", "Tailwind", "WebSockets", "Express"],
+    iconClass: "fas fa-coins",
+    desc: "Web-based application attracting foreign customers to open digital accounts and invest in government-initiated schemes (NPC/INPC, Roshan Apni Car, Samaji Khidmat), loan calculation APIs, and remittances.",
+    tags: [".Net MVC5", ".Net Core", "C#", "REST API", "SQL", "Installment Calculator"],
     githubUrl: "https://github.com",
     liveUrl: "#",
-    liveLabel: "Live Demo",
-  },
-  {
-    title: "ZeroTrust Auth Gate",
-    type: "Security & Auth",
-    bannerClass: "banner-5",
-    iconClass: "fas fa-shield-alt",
-    desc: "Lightweight identity authentication proxy supporting Passkeys (WebAuthn), TOTP MFA, automated anomaly detection, and session revocation.",
-    tags: ["Go", "WebAuthn", "OAuth 2.0", "Redis", "Docker"],
-    githubUrl: "https://github.com",
-    liveUrl: "#",
-    liveLabel: "Live Demo",
-  },
-  {
-    title: "GitMetrics CLI",
-    type: "Open Source CLI",
-    bannerClass: "banner-6",
-    iconClass: "fas fa-terminal",
-    desc: "Fast terminal utility generating insightful developer velocity metrics, code ownership heatmaps, and churn diagnostics from git history.",
-    tags: ["Rust", "CLI", "Git API", "Cross-Platform"],
-    githubUrl: "https://github.com",
-    liveUrl: "#",
-    liveLabel: "Release",
+    liveLabel: "Portal Info",
   },
 ];
 
@@ -92,7 +75,7 @@ export default function ProjectsSection() {
           </span>
           <h2 className="section-title">Featured Projects</h2>
           <p className="section-subtitle">
-            A showcase of production-ready web apps, open-source utilities, and architectural solutions.
+            Production banking platforms, enterprise microservices, and core banking modernization projects.
           </p>
         </div>
 
@@ -106,6 +89,9 @@ export default function ProjectsSection() {
                 </div>
               </div>
               <div className="project-body">
+                <span style={{ fontSize: "0.85rem", color: "var(--accent-primary)", fontWeight: 600, display: "flex", alignItems: "center", gap: "0.35rem", marginBottom: "0.35rem" }}>
+                  <i className="fas fa-building"></i> {proj.company}
+                </span>
                 <h3 className="project-title">{proj.title}</h3>
                 <p className="project-desc">{proj.desc}</p>
                 <div className="project-tags">
@@ -125,7 +111,7 @@ export default function ProjectsSection() {
                     <i className="fab fa-github"></i> Code
                   </a>
                   <a href={proj.liveUrl} className="btn btn-primary btn-sm">
-                    <i className="fas fa-external-link-alt"></i> {proj.liveLabel || "Live Demo"}
+                    <i className="fas fa-external-link-alt"></i> {proj.liveLabel || "Overview"}
                   </a>
                 </div>
               </div>
@@ -140,7 +126,7 @@ export default function ProjectsSection() {
               <i className="fas fa-graduation-cap gradient-text"></i> Explore Academic Credentials &amp; Degrees
             </h3>
             <p>
-              View my academic background, Master&apos;s &amp; Bachelor&apos;s degrees, honors, and verified certifications on my dedicated Education page.
+              View my academic background, Bachelor&apos;s degree in Computer Science from SZABIST Karachi, and technical certifications on my dedicated Education page.
             </p>
           </div>
           <Link href="/education" className="btn btn-primary">
