@@ -13,9 +13,29 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     role: "Senior Software Engineer",
+    company: "Avanza Solutions",
+    location: "Karachi, Pakistan",
+    period: "May 2024 — Present",
+    description:
+      "Integrating enterprise CRM software for Faysal Bank Limited on high-throughput Java REST API microservice architecture and dynamic frontend systems.",
+    duties: [
+      <>
+        <strong>Banking CRM &amp; Architecture:</strong> Coordinated with the bank to facilitate seamless CRM software implementation on a resilient Java REST API microservice architecture.
+      </>,
+      <>
+        <strong>Dynamic Frontend Engineering:</strong> Engaged in enhancing core project modules by architecting and developing dynamic, component-driven frontend architecture in React.js.
+      </>,
+      <>
+        <strong>Workflow Automation:</strong> Created and enhanced complex complaint and service request workflows using dynamic programming techniques and streamlined business logic.
+      </>,
+    ],
+    techStack: ["Java", "Spring Boot", "REST APIs", "Microservices", "React.js", "Dynamic Forms", "Banking CRM"],
+  },
+  {
+    role: "Senior Software Engineer",
     company: "JS Bank",
     location: "Karachi, Pakistan",
-    period: "Feb 2023 — Present",
+    period: "Feb 2023 — Apr 2024",
     description:
       "Driving innovative banking solutions with cutting-edge technology at JS Bank across enterprise onboarding, microservices, and security infrastructure.",
     duties: [
