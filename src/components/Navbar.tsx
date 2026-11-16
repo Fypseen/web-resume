@@ -44,11 +44,6 @@ export default function Navbar() {
     window.dispatchEvent(new Event("storage"));
   };
 
-  const handlePrint = (e: React.MouseEvent) => {
-    e.preventDefault();
-    window.print();
-  };
-
   // Close mobile menu on outside click
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
@@ -168,14 +163,15 @@ export default function Navbar() {
           >
             <i className={theme === "dark" ? "fas fa-sun" : "fas fa-moon"}></i>
           </button>
-          <button
+          <a
+            href="/FarhanAli.pdf"
+            download="FarhanAli.pdf"
             className="btn btn-primary btn-sm btn-print-resume"
-            title="Print or save as PDF"
-            onClick={handlePrint}
+            title="Download PDF Resume"
           >
             <i className="fas fa-file-pdf"></i>
             <span>PDF Resume</span>
-          </button>
+          </a>
           <button
             ref={toggleBtnRef}
             id="mobile-nav-toggle"

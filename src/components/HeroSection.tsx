@@ -5,11 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function HeroSection() {
-  const handlePrint = (e: React.MouseEvent) => {
-    e.preventDefault();
-    window.print();
-  };
-
   return (
     <section className="hero" id="hero">
       <div className="container">
@@ -43,54 +38,73 @@ export default function HeroSection() {
             </div>
 
             <div className="hero-actions">
-              <Link href="/#projects" className="btn btn-primary">
+              <Link href="/#projects" className="btn btn-primary btn-sm">
                 <i className="fas fa-laptop-code"></i>
                 <span>View Projects</span>
               </Link>
-              <button className="btn btn-secondary btn-print-resume" onClick={handlePrint}>
+              <a
+                href="/FarhanAli.pdf"
+                download="FarhanAli.pdf"
+                className="btn btn-secondary btn-sm btn-print-resume"
+              >
                 <i className="fas fa-arrow-down"></i>
                 <span>Download Resume</span>
-              </button>
-              <Link href="/education" className="btn btn-outline">
+              </a>
+              <Link href="/education" className="btn btn-outline btn-sm">
                 <i className="fas fa-graduation-cap"></i>
                 <span>View Education</span>
               </Link>
             </div>
 
-            {/* Social Links */}
-            <div className="hero-socials">
-              <span>Connect:</span>
-              <div className="social-links-list">
-                <a
-                  href="https://github.com/FarhanDaya"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-icon-btn"
-                  aria-label="GitHub Profile"
-                >
-                  <i className="fab fa-github"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/farhan-ali-daya"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-icon-btn"
-                  aria-label="LinkedIn Profile"
-                >
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                  href="mailto:farhandaya22@gmail.com"
-                  className="social-icon-btn"
-                  aria-label="Email Me"
-                >
-                  <i className="fas fa-envelope"></i>
-                </a>
+            {/* Social Links & Mobile Stats */}
+            <div className="hero-meta-row">
+              <div className="hero-socials">
+                <span>Connect:</span>
+                <div className="social-links-list">
+                  <a
+                    href="https://github.com/FarhanDaya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-icon-btn"
+                    aria-label="GitHub Profile"
+                  >
+                    <i className="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/farhan-ali-daya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-icon-btn"
+                    aria-label="LinkedIn Profile"
+                  >
+                    <i className="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href="mailto:farhandaya22@gmail.com"
+                    className="social-icon-btn"
+                    aria-label="Email Me"
+                  >
+                    <i className="fas fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+
+              {/* Stats shown on md/mobile when profile card is hidden */}
+              <div className="hero-stats-row hero-stats-mobile-only">
+                <div className="hero-stat-item">
+                  <span className="hero-stat-number gradient-text">5+</span>
+                  <span className="hero-stat-label">Years Exp</span>
+                </div>
+                <div className="hero-stat-divider"></div>
+                <div className="hero-stat-item">
+                  <span className="hero-stat-number gradient-text">7</span>
+                  <span className="hero-stat-label">Projects</span>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Hero Visual / Profile Card */}
+          {/* Hero Visual / Profile Card (Visible on Desktop, hidden on md/mobile) */}
           <div className="hero-visual">
             <div className="profile-card">
               <div className="avatar-wrapper">
@@ -116,12 +130,8 @@ export default function HeroSection() {
                   <span className="stat-label">Years Exp</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number gradient-text">35+</span>
+                  <span className="stat-number gradient-text">7</span>
                   <span className="stat-label">Projects</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-number gradient-text">99.9%</span>
-                  <span className="stat-label">Reliability</span>
                 </div>
               </div>
             </div>
