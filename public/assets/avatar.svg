@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="avatarFace" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa" />
+      <stop offset="100%" stop-color="#fdba74" />
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle with Gradient -->
+  <circle cx="100" cy="100" r="96" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Glow Ring -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2" />
+
+  <!-- Person Torso / Coat -->
+  <path d="M45,178 C45,138 72,130 100,130 C128,130 155,138 155,178 Z" fill="url(#suitGrad)" />
+  
+  <!-- Collar / Shirt -->
+  <polygon points="100,150 82,130 118,130" fill="#ffffff" />
+  <polygon points="100,165 92,130 108,130" fill="#6366f1" />
+
+  <!-- Neck -->
+  <rect x="88" y="105" width="24" height="30" rx="6" fill="#fbcfe8" />
+
+  <!-- Head / Face -->
+  <ellipse cx="100" cy="85" rx="36" ry="42" fill="url(#avatarFace)" />
+
+  <!-- Hair -->
+  <path d="M64,80 C60,50 80,42 100,42 C120,42 140,50 136,80 C130,55 118,52 100,52 C82,52 70,55 64,80 Z" fill="#18181b" />
+  <path d="M64,78 C64,68 70,58 78,54 C70,62 68,72 68,80 Z" fill="#27272a" />
+
+  <!-- Glasses -->
+  <circle cx="85" cy="82" r="12" fill="none" stroke="#18181b" stroke-width="3" />
+  <circle cx="115" cy="82" r="12" fill="none" stroke="#18181b" stroke-width="3" />
+  <line x1="97" y1="82" x2="103" y2="82" stroke="#18181b" stroke-width="3" />
+  <line x1="68" y1="80" x2="73" y2="82" stroke="#18181b" stroke-width="2.5" />
+  <line x1="127" y1="82" x2="132" y2="80" stroke="#18181b" stroke-width="2.5" />
+
+  <!-- Eyes reflection / dots -->
+  <circle cx="85" cy="82" r="3.5" fill="#18181b" />
+  <circle cx="115" cy="82" r="3.5" fill="#18181b" />
+  <circle cx="86" cy="81" r="1" fill="#ffffff" />
+  <circle cx="116" cy="81" r="1" fill="#ffffff" />
+
+  <!-- Smile -->
+  <path d="M90,102 Q100,112 110,102" fill="none" stroke="#9a3412" stroke-width="2.5" stroke-linecap="round" />
+</svg>
